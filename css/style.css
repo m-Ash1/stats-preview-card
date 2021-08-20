@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: calc(100vh - 16px);
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+
+.flex-centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 1200px;
+    height: 500px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+}
+
+.left-part{
+    width: 50%;
+    padding: 60px;
+}
+
+.left-part h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+}
+
+.purple{
+    color: hsl(277, 64%, 61%);
+}
+
+.left-part p{
+    width: 80%;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+}
+
+.lower-part{
+    display: flex;
+    margin-top: 80px;
+    width: 80%;
+    color: white;
+    justify-content: space-between;
+}
+
+.box{
+    font-family: 'Inter', sans-serif;
+    color:  hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.box span{
+    color:hsl(0, 0%, 100%);
+    font-size: 160%;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.right-part{
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.right-part::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsl(277deg 65% 25% / 58%);
+}
+
+.right-part img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+@media (max-width:1024px){
+    .left-part h1{
+        font-size: 28px;
+    }
+    .left-part{
+        padding: 30px;
+    }
+    .lower-part{
+        margin-top: 30px;
+    }
+    .box{
+        font-size: 80%;
+        margin-right: 10px;
+    }
+    .main{
+        height: 400px;
+        width: 700px;
+    }
+}
+
+@media (max-width:575px){
+    .main{
+        width: 330px;
+        height: 680px;
+        flex-direction: column;
+    }
+
+
+    .right-part{
+        width: 100%;
+        height: 30%;
+        order: 1;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .right-part img{
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+    }
+
+    .left-part{
+        width: 100%;
+        height: 70%;
+        order: 2;
+    }
+    .left-part{
+        padding: 30px;
+        text-align: center;
+    
+
+    }
+    .left-part h1{
+        font-size: 28px;
+    }
+    .left-part p{
+        width: 100%;
+    }
+
+    .lower-part{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .box{
+        margin-bottom: 18px;
+        font-size: 80%;
+    }
+}
