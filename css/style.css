@@ -67,9 +67,13 @@ body{
 }
 
 .right-part{
+    background-image: url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 50%;
-    overflow: hidden;
     position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .right-part::before{
@@ -80,17 +84,16 @@ body{
     left: 0;
     top: 0;
     background-color: hsl(277deg 65% 25% / 58%);
-}
-
-.right-part img{
-    width: 100%;
-    height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 
+
 @media (max-width:1024px){
+    .right-part{
+        background-image: url(../images/image-header-mobile.jpg);
+    }
     .left-part h1{
         font-size: 28px;
     }
@@ -124,11 +127,7 @@ body{
         order: 1;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
-    }
-
-    .right-part img{
-        border-bottom-right-radius: 0;
-        border-top-left-radius: 10px;
+ 
     }
 
     .left-part{
@@ -158,4 +157,8 @@ body{
         margin-bottom: 18px;
         font-size: 80%;
     }
+}
+
+.attribution {
+    display: none;
 }
