@@ -25,10 +25,10 @@ Users should be able to:
 ### Screenshot
 
 ![desktop view](./screenshots/project-3.PNG)
-<p text-align="center">
-  <img src="./screenshots/project-3-Ipad.PNG">
+<p align="center">
+  <img src="./screenshots/project-3-IPAD.PNG">
 </p>
-<p text-align="center">
+<p align="center">
   <img src="./screenshots/project-3-mobile.PNG">
 </p>
 
